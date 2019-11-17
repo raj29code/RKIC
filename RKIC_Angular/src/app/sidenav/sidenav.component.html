@@ -1,0 +1,12 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer class="customSideNavContainer" mode="side" *ngIf="currentUrl!='/login'" opened>
+    <ul class="sidenav">
+        <li class="nav-item">  <a class="nav-link" routerLink="/home" routerLinkActive="active"><mat-icon>school</mat-icon><span class="sideMenuItem">Orders</span>  </a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/Sale" routerLinkActive="active"><mat-icon>sports</mat-icon><span class="sideMenuItem">Sale</span> </a> </li>
+     
+      </ul>
+  </mat-drawer>
+  <div class="full-height">
+  <router-outlet></router-outlet>
+  </div>
+</mat-drawer-container>

@@ -1,0 +1,22 @@
+.navbar{
+  border-bottom :1px solid #8e8a8a;
+  background-color: #7addec;
+  z-index: 4;
+}
+.fullWidth{
+  width:100%;
+}
+.menuBtn{
+  background: none;
+  border: none;
+  display: table-cell;
+  padding: 5px;
+}
+.menuBtn:focus{
+  outline:none;
+  background: #00000052;
+}
+.menuBtn:hover{
+  cursor:pointer;
+  background: #00000052;
+}

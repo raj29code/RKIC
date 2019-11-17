@@ -1,0 +1,42 @@
+
+<div class="justify-content-center" >
+
+   <mat-card class="card-bg-default">
+      <h5 >Orders List</h5>
+      <table class="table table-hover justify-content-center table-bordered">
+        <thead class="thead-light"> 
+          <tr>
+              <th scope="col">OrderId</th>
+              <th scope="col">CustomerId</th>
+              <th scope="col">BricksQTY</th>
+              <th scope="col">PricePerBrick</th>
+              <th scope="col">TotalAmount</th>
+              <th scope="col">PaidAmount</th>
+              <th scope="col">PendingAmount</th>
+              <th scope="col">PaymentDueDate</th>
+              <th scope="col">DateOfOrder</th>
+              <th scope="col">BrickType</th>
+        
+              
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr scope="row" *ngFor="let data of OrderData">
+            <td>{{data.OrderId}}</td>
+            <td>{{data.CustomerId}}</td>
+            <td>{{data.BricksQTY}}</td>
+            <td>{{data.PricePerBrick}}</td>
+            <td>{{data.TotalAmount}}</td>
+            <td>{{data.PaidAmount}}</td>
+            <td>{{data.PendingAmount}}</td>
+            <td>{{data.PaymentDueDate}}</td>
+            <td>{{data.DateOfOrder}}</td>
+            <td>{{data.BrickType}}</td>
+          </tr>
+        
+        </tbody>
+      </table>
+   </mat-card>
+
+</div>
