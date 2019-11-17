@@ -8,11 +8,11 @@ import swal from 'sweetalert2';
 import { OrderService } from '../services/order.service';
 
 @Component({
-  selector: 'app-sale',
-  templateUrl: './sale.component.html',
-  styleUrls: ['./sale.component.css']
+  selector: 'app-sregistration',
+  templateUrl: './SRegistration.component.html',
+  styleUrls: ['./SRegistration.component.css']
 })
-export class SaleComponent implements OnInit {
+export class SRegistrationComponent implements OnInit {
 
   constructor(private salesservice:SaleService,private orderservice:OrderService) { }
   public Phone:string;

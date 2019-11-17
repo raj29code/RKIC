@@ -15,7 +15,7 @@ import { AuthGuard } from './auth/auth.guard';
 import { AuthInterceptor } from './auth/auth.Interceptor';
 import { OrderService } from './services/order.service';
 import { TopMenuComponent } from './menu/topmenu/top-menu.component';
-import { SaleComponent } from './sale/sale.component';
+import { SRegistrationComponent } from './Student/SRegistration.component';
 import { loginComponent } from './login/login.component';
 import { SaleService } from './services/sales.service';
 import { SidenavComponent } from './sidenav/sidenav.component';
@@ -28,7 +28,7 @@ import {MatIconModule} from '@ANGULAr/material/icon';
     loginComponent,
     HomeComponent,
     TopMenuComponent,
-    SaleComponent,
+    SRegistrationComponent,
     SidenavComponent
   ],
   imports: [

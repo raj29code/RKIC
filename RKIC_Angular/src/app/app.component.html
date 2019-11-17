@@ -1,6 +1,7 @@
 
-<app-top-menu *ngIf="currentUrl!='/login'"></app-top-menu>
-<bricks-sidenav  ></bricks-sidenav>
+<app-top-menu *ngIf="currentUrl!='/' && currentUrl!='/login'"></app-top-menu>
+<bricks-sidenav *ngIf="currentUrl!='/' && currentUrl!='/login'"></bricks-sidenav>
+<app-login *ngIf="currentUrl ==='/' || currentUrl ==='/login'"></app-login>
 <footer>
         <p class="text-center no-margin appThemeBg">
           <span> &copy; BricksAngular {{valueDate | date: 'yyyy'}} </span>
