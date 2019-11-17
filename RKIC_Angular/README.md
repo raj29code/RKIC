@@ -1,4 +1,4 @@
-# Angular5
+# School Data Management Angular6
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8. getting used for development of school data management.
 
