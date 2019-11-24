@@ -3,9 +3,12 @@ import {NgForm} from '@angular/forms';
 import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'; //
 import { SaleService } from '../services/sales.service';
-import { Order } from '../models/order.model';
+import { Order } from '../models/Order.model';
 import swal from 'sweetalert2'; 
 import { OrderService } from '../services/order.service';
+import { Qualification, Student } from '../models/registration.model';
+import { DatePipe } from '@angular/common';
+import { RegistrationService } from '../services/registration.service';
 
 @Component({
   selector: 'app-sregistration',
@@ -14,16 +17,27 @@ import { OrderService } from '../services/order.service';
 })
 export class SRegistrationComponent implements OnInit {
 
-  constructor(private salesservice:SaleService,private orderservice:OrderService) { }
+  constructor(private salesservice:SaleService,private orderservice:OrderService,private registrationService:RegistrationService) {
+
+   }
   public Phone:string;
+  public genderList =['Male','Female','Transgender','dont Want to tell'];
+  public subjectList = ['Hindi','English','math'];
+  public studentTypeList = ['Regular','Private'];
+  public srcount:number = 0;
   public customerdata:any;
   public phoneflag=true;
   public orderformflag=false;
   public customerorder=new Order();
+  public qualificationList:  Qualification[];
+  public student = new Student();
   public bricktypearray = ['Type A', 'Type B',
             'Type C'];
   ngOnInit() {
     this.customerorder.BrickType=this.bricktypearray[0];
+    this.qualificationList =[];
+    this.qualificationList.push(this.getNewQualification());
+    this.student.qualification = this.qualificationList;
   }
   _keyUp(event: any) {
     const pattern = /[0-9\+\-\ ]/;  
@@ -31,9 +45,9 @@ export class SRegistrationComponent implements OnInit {
 
     if (!pattern.test(inputChar)) {
       // invalid character, prevent input
-      if(this.Phone.length>0)
+      if(this.student.mobileNumber.length>0)
       {
-        this.Phone= this.Phone.substr(0,event.target.value.length-1);
+        this.student.mobileNumber= this.student.mobileNumber.substr(0,event.target.value.length-1);
       }
     }
   }
@@ -74,22 +88,49 @@ export class SRegistrationComponent implements OnInit {
  }
  onSubmit()
  {
-  this.customerorder.CustomerId=this.customerdata._id;
-  this.customerorder.DateOfOrder=new Date();
-  this.customerorder.LastUpdatedDate=new Date();
-  this.customerorder.IsPaymentSettled=this.customerorder.PendingAmount==0?true:false;
-  this.customerorder.PaymentDueDate=new Date();
 
+ console.log(this.student);
 
-  this.orderservice.addOrder(this.customerorder).subscribe((result)=>{
+  this.registrationService.registerStudent(this.student).subscribe((result)=>{
     swal.fire({
-      title: 'Order !',
+      title: 'Student register successfully !',
       text: result.toString(),
       type: 'success',
       confirmButtonText: 'Ok',
     })
   })
-
+  this.srcount = 0;
+  this.initializeStudent();
  }
+
+ public getNewQualification()
+ {
+  this.srcount ++;
+   return {
+    serial_number: this.srcount,
+    examination:"",
+    yearOfPassing:"",
+    examinationType:"",
+    percentage:"",
+    selectedSubject:"",
+    instituteName:"",
+    board:""};
+ }
+public AddRow()
+{
+  this.qualificationList.push(this.getNewQualification());
+}
+public deleteRow()
+{
+  this.qualificationList.pop();
+  this.srcount --;
+}
+public initializeStudent()
+{
+  this.student = new Student();
+  this.qualificationList =[];
+  this.qualificationList.push(this.getNewQualification());
+  this.student.qualification = this.qualificationList;
+}
 
 }

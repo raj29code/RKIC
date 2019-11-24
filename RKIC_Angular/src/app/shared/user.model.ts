@@ -6,3 +6,7 @@ export class User {
     LastName:string;
     
 }
+export class LoginRequest {
+    UserName: string;
+    Password: string;
+}

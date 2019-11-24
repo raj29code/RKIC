@@ -1,5 +1,4 @@
-
-   <mat-card class="card-bg-default matcardlayout">
+<!-- <mat-card class="card-bg-default matcardlayout">
             <div class="row">
                 <div class="col-8">
                     <input class="input-width" [(ngModel)]="Phone" (keyup)="_keyUp($event)" type="text" class="form-control"
@@ -9,33 +8,20 @@
                     <button class="btn btn-success" (click)="verifyCustomer()" style="width: 7rem" type="button">Go</button>
                 </div>
             </div>
-        </mat-card>
+        </mat-card> -->
 
 
 <mat-card class="card-bg-default matcardlayout">
-            <h5 class="card-title">Place Order</h5>
-            <div class="row">
-                <div class='col-xs-12 col-sm-6'>
-                    <div class="form-group">
-                        <label for="name" class="font-weight-bold">Customer Name:-</label>
-                        <label for="name">{{customerdata.FirstName}} {{customerdata.LastName}}</label>
+    <h5 class="card-title">Student Registration</h5>
 
-                    </div>
-                </div>
-                <div class='col-xs-12 col-sm-6'>
-                    <div class="form-group">
-                        <label for="name" class="font-weight-bold">Phone:-</label>
-                        <label for="name">{{customerdata.Phone}}</label>
-
-                    </div>
-                </div>
-       
-            </div>
-            <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
-                <div class="row">
-                    <div class='col-xs-12 col-sm-4'>
+    <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+        <mat-tab-group>
+            <mat-tab label="Personal Details">
+                <div class="rkc-margin">
+                    <div class="row">
+                        <!-- <div class='col-xs-6 col-sm-2'>
                         <div class="form-group">
-                            <label for="name">Brick Type</label>
+                            <label for="name">First Name</label>
                             <select class="form-control" id="BrickType" required [(ngModel)]="customerorder.BrickType" name="BrickType" #BrickType="ngModel">
                                     <option *ngFor="let pow of bricktypearray" [value]="pow">{{pow}}</option>
                                 </select>
@@ -44,114 +30,366 @@
                                 Brick Type is required
                             </div>
                         </div>
-                    </div>
-                    <div class='col-xs-12 col-sm-4'>
-                        <div class="form-group">
-                            <label for="name">Brick Quantity</label>
-                            <input type="text" class="form-control" id="BricksQTY" (keyup)="totalpriceCal($event)" required [(ngModel)]="customerorder.BricksQTY"
-                                name="BricksQTY" #BricksQTY="ngModel">
-                            <div [hidden]="BricksQTY.valid || BricksQTY.pristine" class="alert alert-danger">
-                                Brick Quantity is required
-                            </div>
-                        </div>
-                    </div>
-                    <div class='col-xs-12 col-sm-4'>
-                        <div class="form-group">
-                            <label for="name">Price Per Brick</label>
-                            <input type="text" class="form-control" id="PricePerBrick" (keyup)="totalpriceCal($event)" required [(ngModel)]="customerorder.PricePerBrick"
-                                name="PricePerBrick" #PricePerBrick="ngModel">
-                            <div [hidden]="PricePerBrick.valid || PricePerBrick.pristine" class="alert alert-danger">
-                                PricePerBrick is required
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!--second form row-================================================-->
-
-                <div class="row">
-                    <div class='col-xs-12 col-sm-4'>
-                        <div class="form-group">
-                            <label for="name">Total Amount</label>
-                            <input type="text" class="form-control" id="TotalAmount" required [(ngModel)]="customerorder.TotalAmount"
-                                name="TotalAmount" #TotalAmount="ngModel">
-                            <div [hidden]="TotalAmount.valid || TotalAmount.pristine" class="alert alert-danger">
-                                TotalAmount is required
-                            </div>
-                        </div>
-                    </div>
-                    <div class='col-xs-12 col-sm-4'>
-                        <div class="form-group">
-                            <label for="name">PaidAmount</label>
-                            <input type="text" class="form-control" id="PaidAmount" (keyup)="PendingCal($event)" required [(ngModel)]="customerorder.PaidAmount"
-                                name="PaidAmount" #PaidAmount="ngModel">
-                            <div [hidden]="PaidAmount.valid || PaidAmount.pristine" class="alert alert-danger">
-                                PaidAmount is required
-                            </div>
-                        </div>
-                    </div>
-                    <div class='col-xs-12 col-sm-4'>
-                        <div class="form-group">
-                            <label for="name">Pending Amount</label>
-                            <input type="text" class="form-control" id="PendingAmount" required [(ngModel)]="customerorder.PendingAmount"
-                                name="PendingAmount" #PendingAmount="ngModel">
-                            <div [hidden]="PendingAmount.valid || PendingAmount.pristine" class="alert alert-danger">
-                                PendingAmount is required
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                        <div class='col-xs-12 col-sm-4'>
-                                <div class="form-group">
-                                    <label for="name">Payment Due Date</label>
-                                    <input type="text" class="form-control" id="PaymentDueDate" required [(ngModel)]="customerorder.PaymentDueDate"
-                                        name="PaymentDueDate" #PaymentDueDate="ngModel">
-                                    <div [hidden]="PaymentDueDate.valid || PaymentDueDate.pristine" class="alert alert-danger">
-                                            Payment Due Date is required
-                                    </div>
+                    </div> -->
+                        <div class='col-xs-6 col-sm-2'>
+                            <div class="form-group">
+                                <label for="name">First Name</label>
+                                <input type="text" class="form-control" id="firstName"
+                                    required [(ngModel)]="student.firstName" name="firstName"
+                                    #firstName="ngModel">
+                                <div [hidden]="firstName.valid || firstName.pristine" class="alert alert-danger">
+                                        First Name is required
                                 </div>
                             </div>
+                        </div>
+                        <div class='col-xs-6 col-sm-2'>
+                            <div class="form-group">
+                                <label for="name">Middle Name</label>
+                                <input type="text" class="form-control" id="middleName"
+                                  [(ngModel)]="student.middleName" name="middleName"
+                                    >
+
+                            </div>
+                        </div>
+                        <div class='col-xs-6 col-sm-2'>
+                            <div class="form-group">
+                                <label for="name">Last Name</label>
+                                <input type="text" class="form-control" id="lastName"
+                                    required [(ngModel)]="student.lastName" name="lastName"
+                                    #lastName="ngModel">
+                                <div [hidden]="lastName.valid || lastName.pristine" class="alert alert-danger">
+                                        lastName is required
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-xs-6 col-sm-2'>
+                            <div class="form-group">
+                                <label for="name">Mobile Number</label>
+                                <input type="text" class="form-control" (keyup)="_keyUp($event)" id="mobileNumber"
+                                     required [(ngModel)]="student.mobileNumber"
+                                    name="mobileNumber" #mobileNumber="ngModel">
+                                <div [hidden]="mobileNumber.valid || mobileNumber.pristine"
+                                    class="alert alert-danger">
+                                    mobileNumber is required
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='col-xs-6 col-sm-2'>
+                            <div class="form-group">
+                                <label for="name">Gender</label>
+                                <select class="form-control" id="gender" required
+                                    [(ngModel)]="student.gender" name="gender" #gender="ngModel">
+                                    <option *ngFor="let pow of genderList" [value]="pow">{{pow}}</option>
+                                </select>
+
+                                <div [hidden]="gender.valid || gender.pristine" class="alert alert-danger">
+                                        gender Type is required
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='col-xs-6 col-sm-2'>
+                            <div class="form-group">
+                                <label for="name">Father Name</label>
+                                <input type="text" class="form-control" id="fatherName"
+                                   required [(ngModel)]="student.fatherName"
+                                    name="fatherName" #fatherName="ngModel">
+                                <div [hidden]="fatherName.valid || fatherName.pristine"
+                                    class="alert alert-danger">
+                                    fatherName is required
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <!--second form row-================================================-->
+
+                    <div class="row">
+
+                        <div class='col-xs-6 col-sm-2'>
+                            <div class="form-group">
+                                <label for="name">Mother Name</label>
+                                <input type="text" class="form-control" id="motherName"
+                                  [(ngModel)]="student.motherName"
+                                    name="motherName" #motherName="ngModel">
+
+                            </div>
+                        </div>
+                        <div class='col-xs-6 col-sm-2'>
+                                <label for="name">DOB</label>
+                                <mat-form-field class="date-field">
+                                        <input matInput [(ngModel)]="student.dateOfBirth" name="dateOfBirth" #dateOfBirth="ngModel"  [matDatepicker]="picker" placeholder="">
+                                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                        <mat-datepicker #picker></mat-datepicker>
+                               </mat-form-field>
+
+                       
+                        </div>
+                        <div class='col-xs-6 col-sm-2'>
+                            <div class="form-group">
+                                <label for="name">Parent Name</label>
+                                <input type="text" class="form-control" id="parentName" 
+                                    [(ngModel)]="student.parentName" name="parentName"
+                                    #parentName="ngModel">
+
+                            </div>
+                        </div>
+                        <div class='col-xs-6 col-sm-2'>
+                            <div class="form-group">
+                                <label for="name">Religion</label>
+                                <input type="text" class="form-control" id="religion" required
+                                    [(ngModel)]="student.religion" name="religion"
+                                    #religion="ngModel">
+                                <div [hidden]="religion.valid || religion.pristine"
+                                    class="alert alert-danger">
+                                    religion is required
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-xs-6 col-sm-2'>
+                            <div class="form-group">
+                                <label for="name">Cast</label>
+                                <input type="text" class="form-control" id="cast" required
+                                    [(ngModel)]="student.cast" name="cast"
+                                    #cast="ngModel">
+                                <div [hidden]="cast.valid || cast.pristine"
+                                    class="alert alert-danger">
+                                    cast is required
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-xs-6 col-sm-2'>
+                            <div class="form-group">
+                               
+                                <section class="example-section">
+                                <mat-checkbox color ="" class="example-margin" [(ngModel)]="student.isMinority" name="isMinority" #isMinority="ngModel">Is Minority</mat-checkbox>
+                            </section>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--================first tab third form row-================================================-->
+                    <div class="row">
+                        <div class='col-xs-6 col-sm-2'>
+                            <div class="form-group">
+                                <label for="name">Minority Details</label>
+                                <input type="text" [disabled]="!student.isMinority" class="form-control" id="minorityDetails" 
+                                    [(ngModel)]="student.minorityDetails" name="minorityDetails"
+                                    #minorityDetails="ngModel">
+
+                            </div>
+                        </div>
+                        <div class='col-xs-6 col-sm-2'>
+                            <div class="form-group">
+                                <label for="name">Stream/Class</label>
+                                <select class="form-control" id="stream" required
+                                    [(ngModel)]="student.stream" name="stream" #stream="ngModel">
+                                    <option *ngFor="let pow of bricktypearray" [value]="pow">{{pow}}</option>
+                                </select>
+
+                                <div [hidden]="stream.valid || stream.pristine" class="alert alert-danger">
+                                        stream is required
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-xs-6 col-sm-2'>
+                            <div class="form-group">
+                                <label for="name">Select Subject</label>
+                                <mat-select [(ngModel)]="student.subject" name="subject" #subject="ngModel" multiple required>
+                                        <mat-option *ngFor="let topping of subjectList" [value]="topping">{{topping}}</mat-option>
+                               </mat-select>
+
+                                <div [hidden]="subject.valid || subject.pristine" class="alert alert-danger">
+                                        subject is required
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class='col-xs-6 col-sm-2'>
+                            <div class="form-group">
+                                <label for="name">Father Occupation</label>
+                                <input type="text" class="form-control" id="fatherOccupation" 
+                                    [(ngModel)]="subject.fatherOccupation" name="fatherOccupation"
+                                    #fatherOccupation="ngModel">
+
+                            </div>
+                        </div>
+                        <div class='col-xs-6 col-sm-2'>
+                            <div class="form-group">
+                                <label for="name">Mother Occupation</label>
+                                <input type="text" class="form-control" id="motherOccupation" 
+                                    [(ngModel)]="subject.motherOccupation" name="motherOccupation"
+                                    #motherOccupation="ngModel">
+
+                            </div>
+                        </div>
+                        <div class='col-xs-6 col-sm-2'>
+                            <div class="form-group">
+                                <label for="name">Email</label>
+                                <input type="email" class="form-control" id="email" 
+                                    [(ngModel)]="subject.email" name="email"
+                                    #email="ngModel">
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+
+                        <div class='col-xs-6 col-sm-2'>
+                            <div class="form-group">
+                                <label for="name">Permnt. Address</label>
+                                <textarea class="form-control" id="permanentAddress" required
+                                    [(ngModel)]="subject.permanentAddress" name="permanentAddress"
+                                    #permanentAddress="ngModel"></textarea>
+                                <div [hidden]="permanentAddress.valid || permanentAddress.pristine"
+                                    class="alert alert-danger">
+                                    PermanentAddress is required
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-xs-6 col-sm-2'>
+                            <div class="form-group">
+                                <label for="name">Current Address</label>
+                                <textarea class="form-control" id="currentAddress" required
+                                    [(ngModel)]="subject.currentAddress" name="currentAddress"
+                                    #currentAddress="ngModel"></textarea>
+                                <div [hidden]="currentAddress.valid || currentAddress.pristine"
+                                    class="alert alert-danger">
+                                    currentAddress is required
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-xs-12 col-sm-4'>
+                            <div class="form-group">
+                                <label for="name">Last College Name</label>
+                                <input type="text" class="form-control" id="lastCollegeName" required
+                                    [(ngModel)]="subject.lastCollegeName" name="lastCollegeName"
+                                    #lastCollegeName="ngModel">
+                                <div [hidden]="lastCollegeName.valid || lastCollegeName.pristine"
+                                    class="alert alert-danger">
+                                    lastCollegeName is required
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-xs-6 col-sm-2'>
+                            <div class="form-group">
+                                <label for="name">Student Type</label>
+                                <select class="form-control" id="studentType" required
+                                    [(ngModel)]="subject.studentType" name="studentType" #studentType="ngModel">
+                                    <option *ngFor="let pow of studentTypeList" [value]="pow">{{pow}}</option>
+                                </select>
+
+                                <div [hidden]="studentType.valid || studentType.pristine" class="alert alert-danger">
+                                        Student Type is required
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <!-- <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" required [(ngModel)]="customerorder.name" name="name" #name="ngModel">
-            <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-                Name is required
-            </div>
+            </mat-tab>
+
+            <mat-tab label="Qualification Details">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Sr. No.</th>
+                            <th scope="col">Examination</th>
+                            <th scope="col">Year of Passing</th>
+                            <th scope="col">Examination Type</th>
+                            <th scope="col">Percentage</th>
+                            <th scope="col">Selected Subject</th>
+                            <th scope="col">Institute Name</th>
+                            <th scope="col">Board</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of qualificationList; let i = index">
+                            <th scope="row" >{{item.serial_number}}</th>
+                            <td class="col-2">
+                                <mat-form-field class="example-full-width">
+                                        <mat-select [(ngModel)]="item.examination" name="examination" #examination="ngModel">
+                                                <mat-option *ngFor="let pow of bricktypearray" [value]="pow">
+                                                  {{pow}}
+                                                </mat-option>
+                                              </mat-select>
+                                </mat-form-field>
+                            </td>
+                            <td>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="yearOfPassing" name="yearOfPassing" [(ngModel)]="item.yearOfPassing" #yearOfPassing="ngModel">
+                                </mat-form-field>
+                            </td>
+                            <td>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="examinationType" name="examinationType" [(ngModel)]="item.examinationType" #examinationType="ngModel">
+                                </mat-form-field>
+                            </td>
+                            <td>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Enter percentage" name="percentage" [(ngModel)]="item.percentage" #percentage="ngModel">
+                                </mat-form-field>
+                            </td>
+                            <td>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Enter selectedSubject" name="selectedSubject" [(ngModel)]="item.selectedSubject" #selectedSubject="ngModel">
+                                </mat-form-field>
+                            </td>
+                            <td>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Enter instituteName" name="instituteName" [(ngModel)]="item.instituteName" #instituteName="ngModel">
+                                </mat-form-field>
+                            </td>
+                            <td>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Enter board" name="board" [(ngModel)]="item.board" #examiboardnation="ngModel">
+                                </mat-form-field>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+                <div class="row no-margin">
+
+                        <button type="button"   style="margin: 2px;" (click)="AddRow()" class="btn btn-warning "
+                            >Add Row</button>
+                            <button  type="button" style="margin: 2px;" *ngIf="qualificationList.length > 1" (click)="deleteRow()" class="btn btn-danger "
+                            >Delete Row</button>
+
+                    </div>
+                <!-- <table>
+ 
+                            <tr>
+                            <td align="center"><b>Sl.No.</b></td>
+                            <td align="center"><b>Examination</b></td>
+                            <td align="center"><b>Board</b></td>
+                            <td align="center"><b>Percentage</b></td>
+                            <td align="center"><b>Year of Passing</b></td>
+                            </tr>
+                        </table> -->
+            </mat-tab>
+        </mat-tab-group>
+        <div class="row no-margin">
+
+            <button type="submit" style="margin: 2px;" class="btn btn-success "
+                [disabled]="!heroForm.form.valid">Submit</button>
+
+
+            <button type="button" style="margin: 2px;" class="btn btn-info  "
+                (click)="newHero(); heroForm.reset()">Cancel</button>
         </div>
 
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" required [(ngModel)]="customerorder.name" name="name" #name="ngModel">
-            <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-                Name is required
-            </div>
-        </div> -->
 
-                <!-- <div class="form-group">
-            <label for="alterEgo">Alter Ego</label>
-            <input type="text" class="form-control" id="alterEgo" [(ngModel)]="customerorder.alterEgo" name="alterEgo">
-        </div> -->
-
-                <!-- <div class="form-group">
-            <label for="power">Hero Power</label>
-            <select class="form-control" id="power" required [(ngModel)]="customerorder.power" name="power" #power="ngModel">
-                <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
-            </select>
-            <div [hidden]="power.valid || power.pristine" class="alert alert-danger">
-                Power is required
-            </div>
-        </div> -->
-        <div class="row no-margin">
-        
-                <button type="submit" class="btn btn-success " [disabled]="!heroForm.form.valid">Submit</button>
-               
- 
-                <button type="button" class="btn btn-info  " (click)="newHero(); heroForm.reset()">Cancel</button>
-            </div>
-           
-   
-            </form>
-        </mat-card>
+    </form>
+</mat-card>

@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
-import {MatSidenavModule} from '@angular/material';
+import {MatSidenavModule, MatTab, MatTabsModule, MAT_DATE_LOCALE} from '@angular/material';
 import { AppComponent } from './app.component';
 import { UserService } from './shared/user.service';
 import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -22,6 +22,9 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@ANGULAr/material/icon';
+import { DemoMaterialModule } from './material.module';
+import { DatePipe } from '@angular/common';
+import { RegistrationService } from './services/registration.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,22 +38,20 @@ import {MatIconModule} from '@ANGULAr/material/icon';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    MatSidenavModule,
-    MatCardModule,
-    MatMenuModule,
-    MatIconModule,
+    DemoMaterialModule,
     ToastrModule.forRoot(),
     BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes),
    // MatSidenavModule
   ],
-  providers: [UserService,AuthGuard
-  ,OrderService,SaleService
-// {
-//   provide:HTTP_INTERCEPTORS,
-//   useClass:AuthInterceptor,
-//   multi:true
-// }
+  providers: [UserService,AuthGuard,RegistrationService,
+    {provide: MAT_DATE_LOCALE, useValue: 'en-GB'}
+  ,OrderService,SaleService,DatePipe,
+{
+  provide:HTTP_INTERCEPTORS,
+  useClass:AuthInterceptor,
+  multi:true
+}
 ],
   bootstrap: [AppComponent]
 })

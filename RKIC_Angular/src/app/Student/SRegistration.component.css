@@ -2,5 +2,32 @@
     width: 100rem
 }
 .matcardlayout{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
+.rkc-margin{
+    margin-top: 20px;
+}
+.example-full-width {
+    width: 80%;
+  }
+.date-field{
+    width: 139px;
+    margin-top: -8px;
+}
+.example-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 102px;
+  }
+  
+  ::ng-deep.mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color:forestgreen;
+}
+  .example-margin {
+    margin: 0 10px;
+  }
+    
+  
+
+  
