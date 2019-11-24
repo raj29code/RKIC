@@ -77,7 +77,7 @@ namespace Web.Model.Student
     }
         private static string GetNewStudentRegistration(string courseId)
         {
-            return DateTime.Now.Year.ToString() + "222" + 13; //need to remove  
+            return DateTime.Now.Year.ToString() + "222" + 13; //need to remove after we get code     
         }
     }
 }
