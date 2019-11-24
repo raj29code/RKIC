@@ -1,9 +1,0 @@
-C:\RKIC\RKIC_API\src\Service\bin\Release\netcoreapp2.1\Service.deps.json
-C:\RKIC\RKIC_API\src\Service\bin\Release\netcoreapp2.1\Service.dll
-C:\RKIC\RKIC_API\src\Service\bin\Release\netcoreapp2.1\Service.pdb
-C:\RKIC\RKIC_API\src\Service\obj\Release\netcoreapp2.1\Service.csprojAssemblyReference.cache
-C:\RKIC\RKIC_API\src\Service\obj\Release\netcoreapp2.1\Service.csproj.CoreCompileInputs.cache
-C:\RKIC\RKIC_API\src\Service\obj\Release\netcoreapp2.1\Service.AssemblyInfoInputs.cache
-C:\RKIC\RKIC_API\src\Service\obj\Release\netcoreapp2.1\Service.AssemblyInfo.cs
-C:\RKIC\RKIC_API\src\Service\obj\Release\netcoreapp2.1\Service.dll
-C:\RKIC\RKIC_API\src\Service\obj\Release\netcoreapp2.1\Service.pdb
