@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="WebApi20190804094849" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\RKIC\\RKIC_API\\src\\Web\.Api\\obj\\Release\\netcoreapp2\.1\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>

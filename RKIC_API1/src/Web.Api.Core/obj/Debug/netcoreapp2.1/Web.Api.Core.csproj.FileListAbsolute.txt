@@ -1,0 +1,14 @@
+C:\RKIC\RKIC_API\src\Web.Api.Core\obj\Debug\netcoreapp2.1\Web.Api.Core.csproj.CoreCompileInputs.cache
+C:\RKIC\RKIC_API\src\Web.Api.Core\obj\Debug\netcoreapp2.1\Web.Api.Core.AssemblyInfoInputs.cache
+C:\RKIC\RKIC_API\src\Web.Api.Core\obj\Debug\netcoreapp2.1\Web.Api.Core.AssemblyInfo.cs
+C:\RKIC\RKIC_API\src\Web.Api.Core\bin\Debug\netcoreapp2.1\Web.Api.Core.deps.json
+C:\RKIC\RKIC_API\src\Web.Api.Core\bin\Debug\netcoreapp2.1\Web.Api.Core.dll
+C:\RKIC\RKIC_API\src\Web.Api.Core\bin\Debug\netcoreapp2.1\Web.Api.Core.pdb
+C:\RKIC\RKIC_API\src\Web.Api.Core\bin\Debug\netcoreapp2.1\Service.dll
+C:\RKIC\RKIC_API\src\Web.Api.Core\bin\Debug\netcoreapp2.1\Web.Model.dll
+C:\RKIC\RKIC_API\src\Web.Api.Core\bin\Debug\netcoreapp2.1\Service.pdb
+C:\RKIC\RKIC_API\src\Web.Api.Core\bin\Debug\netcoreapp2.1\Web.Model.pdb
+C:\RKIC\RKIC_API\src\Web.Api.Core\obj\Debug\netcoreapp2.1\Web.Api.Core.csprojAssemblyReference.cache
+C:\RKIC\RKIC_API\src\Web.Api.Core\obj\Debug\netcoreapp2.1\Web.Api.Core.csproj.CopyComplete
+C:\RKIC\RKIC_API\src\Web.Api.Core\obj\Debug\netcoreapp2.1\Web.Api.Core.dll
+C:\RKIC\RKIC_API\src\Web.Api.Core\obj\Debug\netcoreapp2.1\Web.Api.Core.pdb

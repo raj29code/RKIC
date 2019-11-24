@@ -1,0 +1,16 @@
+C:\RKIC\RKIC_API\src\Web.Api.Infrastructure\bin\Release\netcoreapp2.1\Web.Api.Infrastructure.deps.json
+C:\RKIC\RKIC_API\src\Web.Api.Infrastructure\bin\Release\netcoreapp2.1\Web.Api.Infrastructure.runtimeconfig.json
+C:\RKIC\RKIC_API\src\Web.Api.Infrastructure\bin\Release\netcoreapp2.1\Web.Api.Infrastructure.runtimeconfig.dev.json
+C:\RKIC\RKIC_API\src\Web.Api.Infrastructure\bin\Release\netcoreapp2.1\Web.Api.Infrastructure.dll
+C:\RKIC\RKIC_API\src\Web.Api.Infrastructure\bin\Release\netcoreapp2.1\Web.Api.Infrastructure.pdb
+C:\RKIC\RKIC_API\src\Web.Api.Infrastructure\bin\Release\netcoreapp2.1\Service.dll
+C:\RKIC\RKIC_API\src\Web.Api.Infrastructure\bin\Release\netcoreapp2.1\Web.Api.Core.dll
+C:\RKIC\RKIC_API\src\Web.Api.Infrastructure\bin\Release\netcoreapp2.1\Web.Api.Core.pdb
+C:\RKIC\RKIC_API\src\Web.Api.Infrastructure\bin\Release\netcoreapp2.1\Service.pdb
+C:\RKIC\RKIC_API\src\Web.Api.Infrastructure\obj\Release\netcoreapp2.1\Web.Api.Infrastructure.csprojAssemblyReference.cache
+C:\RKIC\RKIC_API\src\Web.Api.Infrastructure\obj\Release\netcoreapp2.1\Web.Api.Infrastructure.csproj.CoreCompileInputs.cache
+C:\RKIC\RKIC_API\src\Web.Api.Infrastructure\obj\Release\netcoreapp2.1\Web.Api.Infrastructure.AssemblyInfoInputs.cache
+C:\RKIC\RKIC_API\src\Web.Api.Infrastructure\obj\Release\netcoreapp2.1\Web.Api.Infrastructure.AssemblyInfo.cs
+C:\RKIC\RKIC_API\src\Web.Api.Infrastructure\obj\Release\netcoreapp2.1\Web.Api.Infrastructure.csproj.CopyComplete
+C:\RKIC\RKIC_API\src\Web.Api.Infrastructure\obj\Release\netcoreapp2.1\Web.Api.Infrastructure.dll
+C:\RKIC\RKIC_API\src\Web.Api.Infrastructure\obj\Release\netcoreapp2.1\Web.Api.Infrastructure.pdb

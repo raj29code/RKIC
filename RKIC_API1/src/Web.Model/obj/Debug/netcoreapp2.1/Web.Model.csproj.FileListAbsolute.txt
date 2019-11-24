@@ -1,0 +1,8 @@
+C:\RKIC\RKIC_API\src\Web.Model\bin\Debug\netcoreapp2.1\Web.Model.deps.json
+C:\RKIC\RKIC_API\src\Web.Model\bin\Debug\netcoreapp2.1\Web.Model.dll
+C:\RKIC\RKIC_API\src\Web.Model\bin\Debug\netcoreapp2.1\Web.Model.pdb
+C:\RKIC\RKIC_API\src\Web.Model\obj\Debug\netcoreapp2.1\Web.Model.csproj.CoreCompileInputs.cache
+C:\RKIC\RKIC_API\src\Web.Model\obj\Debug\netcoreapp2.1\Web.Model.AssemblyInfoInputs.cache
+C:\RKIC\RKIC_API\src\Web.Model\obj\Debug\netcoreapp2.1\Web.Model.AssemblyInfo.cs
+C:\RKIC\RKIC_API\src\Web.Model\obj\Debug\netcoreapp2.1\Web.Model.dll
+C:\RKIC\RKIC_API\src\Web.Model\obj\Debug\netcoreapp2.1\Web.Model.pdb
